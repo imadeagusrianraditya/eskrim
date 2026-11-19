@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eskrim: dingin sampai pintu</title>
+<meta name="description" content="Pilih rasa eskrim, atur jumlah, kirim ke WhatsApp atau checkout langsung.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="container">
+    <a class="wordmark" href="#top">Eskrim</a>
+    <label class="search-pill">
+      <input id="search" type="search" placeholder="Cari rasa…" aria-label="Cari rasa">
+    </label>
+    <div class="nav-actions">
+      <button class="cart-btn" id="openCart" type="button">Keranjang <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <h1>Eskrim, dingin sampai pintu.</h1>
+          <p class="lead">Pilih rasa, atur jumlah, kirim ke WhatsApp atau checkout langsung.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#menu">Lihat menu</a>
+            <a class="btn btn--ghost" href="#cara">Cara kerja</a>
+          </div>
+        </div>
+        <div class="app-slot" data-slot="hero-app" data-kind="product" data-alt="Layar aplikasi pemesanan eskrim">
+          <div class="app-ui">
+            <div class="app-bar"><strong>Eskrim</strong><span>Keranjang 2</span></div>
+            <div class="flavour-row">
+              <div><div class="name">Vanila Madagaskar</div><div class="desc">krim lembut, aroma vanila asli</div></div>
+              <div class="price">28.000</div>
+              <div class="qty"><button type="button" aria-label="Kurang">−</button><span>1</span><button type="button" aria-label="Tambah">+</button></div>
+            </div>
+            <div class="flavour-row">
+              <div><div class="name">Stroberi Segar</div><div class="desc">stroberi asli, sedikit asam</div></div>
+              <div class="price">30.000</div>
+              <div class="qty"><button type="button" aria-label="Kurang">−</button><span>1</span><button type="button" aria-label="Tambah">+</button></div>
+            </div>
+            <div class="cart-total"><span>Total</span><strong>58.000</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--first" id="menu">
+    <div class="container">
+      <div class="section-head">
+        <h2>Menu rasa</h2>
+        <p class="lead">Enam rasa inti. Geser untuk melihat semua, ketuk tambah untuk masuk keranjang.</p>
+      </div>
+      <div class="rail-wrap">
+        <div class="rail" id="flavourRail"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cara">
+    <div class="container">
+      <div class="section-head">
+        <h2>Cara kerja</h2>
+        <p class="lead">Tiga langkah dari pilih rasa sampai eskrim di tangan.</p>
+      </div>
+      <div class="pinned">
+        <div class="sticky-visual app-slot" data-slot="app-flow" data-kind="product" data-alt="Layar keranjang dan checkout">
+          <div class="app-ui">
+            <div class="app-bar"><strong>Eskrim</strong><span>Checkout</span></div>
+            <div class="flavour-row">
+              <div><div class="name">Vanila Madagaskar</div><div class="desc">x2</div></div>
+              <div class="price">56.000</div>
+              <div></div>
+            </div>
+            <div class="flavour-row">
+              <div><div class="name">Mangga Harum</div><div class="desc">x1</div></div>
+              <div class="price">29.000</div>
+              <div></div>
+            </div>
+            <div class="cart-total"><span>Total</span><strong>85.000</strong></div>
+          </div>
+        </div>
+        <div>
+          <div class="panel">
+            <div class="step-num">1</div>
+            <h3>Pilih rasa</h3>
+            <p>Tap tambah pada rasa yang diinginkan. Ubah jumlah dengan tombol plus dan minus.</p>
+          </div>
+          <div class="panel">
+            <div class="step-num">2</div>
+            <h3>Atur keranjang</h3>
+            <p>Buka keranjang di kanan atas. Hapus atau ubah jumlah sebelum memesan.</p>
+          </div>
+          <div class="panel">
+            <div class="step-num">3</div>
+            <h3>Kirim pesanan</h3>
+            <p>Kirim ke WhatsApp untuk konfirmasi manual, atau checkout langsung dengan data pengiriman.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="showcase">
+        <div class="section-head">
+          <h2>Keranjangmu, siap kirim</h2>
+          <p class="lead">Ringkasan pesanan muncul sebelum dikirim. Total dihitung otomatis dari jumlah rasa.</p>
+        </div>
+        <div class="big-frame">
+          <div class="app-ui">
+            <div class="app-bar"><strong>Eskrim</strong><span>Ringkasan</span></div>
+            <div class="flavour-row">
+              <div><div class="name">Stroberi Segar</div><div class="desc">x3</div></div>
+              <div class="price">90.000</div>
+              <div></div>
+            </div>
+            <div class="flavour-row">
+              <div><div class="name">Cokelat Belgia</div><div class="desc">x1</div></div>
+              <div class="price">32.000</div>
+              <div></div>
+            </div>
+            <div class="flavour-row">
+              <div><div class="name">Cookies &amp; Cream</div><div class="desc">x2</div></div>
+              <div class="price">62.000</div>
+              <div></div>
+            </div>
+            <div class="cart-total"><span>Total</span><strong>184.000</strong></div>
+          </div>
+        </div>
+        <p class="caption">Harga contoh. Ganti dengan menu dan harga asli sebelum dipakai.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--s">
+    <div class="container">
+      <div class="section-head">
+        <h2>Pengiriman dan jaminan</h2>
+        <p class="lead">Fakta singkat sebelum memesan.</p>
+      </div>
+      <dl class="facts">
+        <div class="fact-row"><dt>Area kirim</dt><dd>Jakarta Selatan dan sekitarnya. Di luar area, ongkir menyesuaikan.</dd></div>
+        <div class="fact-row"><dt>Minimum order</dt><dd>3 cup atau setara Rp 75.000.</dd></div>
+        <div class="fact-row"><dt>Waktu kirim</dt><dd>Pagi 09.00 sampai 12.00, sore 15.00 sampai 18.00. Pilih slot saat checkout.</dd></div>
+        <div class="fact-row"><dt>Jaminan</dt><dd>Dikirim dalam cold box. Tidak dingin saat tiba, ganti gratis.</dd></div>
+        <div class="fact-row"><dt>Pembayaran</dt><dd>COD atau transfer. Konfirmasi via WhatsApp.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-signoff">Eskrim dingin, sampai pintu. Sampai jumpa di pengiriman berikutnya.</p>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#cara">Cara kerja</a>
+      <a href="#" id="footerCart">Keranjang</a>
+    </div>
+    <p class="footer-legal">© Eskrim. Harga dan menu contoh, ganti sebelum dipakai. Dibuat dengan Hallmark.</p>
+  </div>
+</footer>
+
+<div class="overlay" id="cartOverlay" aria-hidden="true">
+  <div class="drawer" role="dialog" aria-labelledby="cartTitle">
+    <div>
+      <h2 id="cartTitle">Keranjang</h2>
+    </div>
+    <div class="drawer-items" id="cartItems"></div>
+    <div>
+      <div class="drawer-total" id="cartTotal"><span>Total</span><strong>0</strong></div>
+      <div class="drawer-actions">
+        <button class="btn btn--primary" id="toWhatsapp" type="button">Kirim ke WhatsApp</button>
+        <button class="btn btn--ghost" id="toCheckout" type="button">Checkout langsung</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="checkoutModal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-labelledby="checkoutTitle">
+    <h2 id="checkoutTitle">Checkout langsung</h2>
+    <div class="field"><label for="cName">Nama</label><input id="cName" type="text" required></div>
+    <div class="field"><label for="cPhone">Nomor WhatsApp</label><input id="cPhone" type="tel" required></div>
+    <div class="field"><label for="cAddress">Alamat pengiriman</label><textarea id="cAddress" required></textarea></div>
+    <div class="field"><label for="cSlot">Slot waktu</label><select id="cSlot"><option>Pagi 09.00 sampai 12.00</option><option>Sore 15.00 sampai 18.00</option></select></div>
+    <div class="field"><label for="cPay">Pembayaran</label><select id="cPay"><option>COD</option><option>Transfer</option></select></div>
+    <div class="modal-actions">
+      <button class="btn btn--primary" id="placeOrder" type="button">Buat pesanan</button>
+      <button class="btn btn--ghost" id="closeCheckout" type="button">Batal</button>
+    </div>
+    <div id="orderSuccess" hidden></div>
+  </div>
+</div>
+
+<script>
+window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });
+
+const FLAVOURS = [
+  {id:'vanilla', name:'Vanila Madagaskar', desc:'krim lembut, aroma vanila asli', price:28000, fill:'fill-pink'},
+  {id:'strawberry', name:'Stroberi Segar', desc:'stroberi asli, sedikit asam', price:30000, fill:'fill-lime'},
+  {id:'choco', name:'Cokelat Belgia', desc:'cokelat pekat, tekstur halus', price:32000, fill:'fill-ink'},
+  {id:'mango', name:'Mangga Harum', desc:'mangga matang, manis segar', price:29000, fill:'fill-paper'},
+  {id:'matcha', name:'Matcha Kyoto', desc:'matcha hijau, rasa tanah', price:33000, fill:'fill-pink'},
+  {id:'cookies', name:'Cookies & Cream', desc:'potongan biskuit di krim vanila', price:31000, fill:'fill-lime'},
+];
+const WA_PHONE = '628123456789';
+const cart = {};
+
+function formatRp(n){ return n.toLocaleString('id-ID'); }
+function cartCount(){ return Object.values(cart).reduce((a,b)=>a+b,0); }
+function cartTotal(){ return Object.entries(cart).reduce((t,[id,q])=> t + (FLAVOURS.find(f=>f.id===id).price * q), 0); }
+
+function renderRail(filter){
+  const rail = document.getElementById('flavourRail');
+  rail.innerHTML = '';
+  FLAVOURS.filter(f => !filter || f.name.toLowerCase().includes(filter.toLowerCase()) || f.desc.toLowerCase().includes(filter.toLowerCase()))
+    .forEach((f, i) => {
+      const card = document.createElement('article');
+      card.className = 'flavour-card ' + f.fill + ' ' + (i%3===0?'tilt-a':i%3===1?'tilt-b':'tilt-c');
+      card.innerHTML = `
+        <h3 class="name">${f.name}</h3>
+        <p class="desc">${f.desc}</p>
+        <div class="price">${formatRp(f.price)}</div>
+        <button class="add" type="button" data-id="${f.id}">Tambah</button>
+      `;
+      rail.appendChild(card);
+    });
+  rail.querySelectorAll('.add').forEach(btn => btn.addEventListener('click', () => {
+    const id = btn.dataset.id;
+    cart[id] = (cart[id]||0)+1;
+    updateCartUI();
+    btn.textContent = 'Ditambah';
+    setTimeout(()=> btn.textContent='Tambah', 900);
+  }));
+}
+
+function updateCartUI(){
+  document.getElementById('cartCount').textContent = cartCount();
+  const items = document.getElementById('cartItems');
+  const entries = Object.entries(cart);
+  if(entries.length===0){ items.innerHTML = '<p class="empty-cart">Keranjang kosong. Tambah rasa dari menu.</p>'; }
+  else {
+    items.innerHTML = entries.map(([id,q]) => {
+      const f = FLAVOURS.find(x=>x.id===id);
+      return `<div class="drawer-item">
+        <div><div class="name">${f.name}</div><div class="meta">${formatRp(f.price)} × ${q} = ${formatRp(f.price*q)}</div></div>
+        <div class="qty">
+          <button type="button" data-act="dec" data-id="${id}">−</button>
+          <span>${q}</span>
+          <button type="button" data-act="inc" data-id="${id}">+</button>
+        </div>
+      </div>`;
+    }).join('');
+    items.querySelectorAll('button').forEach(b => b.addEventListener('click', () => {
+      const id = b.dataset.id;
+      if(b.dataset.act==='inc') cart[id]++;
+      else { cart[id]--; if(cart[id]<=0) delete cart[id]; }
+      updateCartUI();
+    }));
+  }
+  document.getElementById('cartTotal').innerHTML = `<span>Total</span><strong>${formatRp(cartTotal())}</strong>`;
+}
+
+function openCart(){ document.getElementById('cartOverlay').classList.add('open'); document.getElementById('cartOverlay').setAttribute('aria-hidden','false'); updateCartUI(); }
+function closeCart(){ document.getElementById('cartOverlay').classList.remove('open'); document.getElementById('cartOverlay').setAttribute('aria-hidden','true'); }
+
+document.getElementById('openCart').addEventListener('click', openCart);
+document.getElementById('footerCart').addEventListener('click', (e)=>{ e.preventDefault(); openCart(); });
+document.getElementById('cartOverlay').addEventListener('click', (e)=>{ if(e.target.id==='cartOverlay') closeCart(); });
+
+document.getElementById('toWhatsapp').addEventListener('click', () => {
+  if(cartCount()===0){ alert('Keranjang kosong.'); return; }
+  const lines = Object.entries(cart).map(([id,q]) => {
+    const f = FLAVOURS.find(x=>x.id===id);
+    return `- ${f.name} x${q} = Rp ${formatRp(f.price*q)}`;
+  });
+  const msg = `Halo, saya mau pesan eskrim:%0A${lines.join('%0A')}%0A%0ATotal: Rp ${formatRp(cartTotal())}%0A%0AMohon konfirmasi ketersediaan dan ongkir. Terima kasih.`;
+  window.open(`https://wa.me/${WA_PHONE}?text=${msg}`, '_blank');
+});
+
+document.getElementById('toCheckout').addEventListener('click', () => {
+  if(cartCount()===0){ alert('Keranjang kosong.'); return; }
+  closeCart();
+  document.getElementById('checkoutModal').classList.add('open');
+  document.getElementById('checkoutModal').setAttribute('aria-hidden','false');
+  document.getElementById('orderSuccess').hidden = true;
+});
+
+document.getElementById('closeCheckout').addEventListener('click', () => {
+  document.getElementById('checkoutModal').classList.remove('open');
+  document.getElementById('checkoutModal').setAttribute('aria-hidden','true');
+});
+
+document.getElementById('placeOrder').addEventListener('click', () => {
+  const name = document.getElementById('cName').value.trim();
+  const phone = document.getElementById('cPhone').value.trim();
+  const addr = document.getElementById('cAddress').value.trim();
+  if(!name || !phone || !addr){ alert('Lengkapi nama, nomor, dan alamat.'); return; }
+  const slot = document.getElementById('cSlot').value;
+  const pay = document.getElementById('cPay').value;
+  const items = Object.entries(cart).map(([id,q]) => {
+    const f = FLAVOURS.find(x=>x.id===id);
+    return `${f.name} x${q}`;
+  }).join(', ');
+  const orderNo = 'ESK-' + Math.floor(1000 + Math.random()*9000);
+  const success = document.getElementById('orderSuccess');
+  success.hidden = false;
+  success.innerHTML = `<strong>Pesanan ${orderNo} dibuat</strong><p>${items}</p><p>Total Rp ${formatRp(cartTotal())} · ${slot} · ${pay}</p><p>Kami akan hubungi via WhatsApp untuk konfirmasi.</p>`;
+  // reset cart
+  for(const k in cart) delete cart[k];
+  updateCartUI();
+});
+
+document.getElementById('search').addEventListener('input', (e) => {
+  renderRail(e.target.value);
+});
+
+renderRail('');
+updateCartUI();
+</script>
+</body>
+</html>
